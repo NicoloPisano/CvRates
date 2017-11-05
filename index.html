@@ -22,9 +22,12 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <style>
       header.masthead {
-          background-image: url("img/homepagepic.jpg" );
+          background-image: url("img/homepagepic_V2_opacity.png" );
           background-position: center center;
           background-size: 1500px;
+          /* opacity: 0.5; 
+          filter: alpha(opacity=50); */
+
         }
 
      table {
@@ -42,6 +45,41 @@
     tr:nth-child(even) {
         background-color: #dddddd;
     }
+
+
+#containertest {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+#blocktest {
+  background-image: url("img/homepagepic.jpg" );
+  background-position: center center;
+  background-size: 1500px;
+  filter: alpha(opacity=60);
+  /* IE */
+  -moz-opacity: 0.6;
+  /* Mozilla */
+  opacity: 0.6;
+  /* CSS3 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#texttest {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #2E3192;
+}
+
       </style>
   </head>
 
@@ -50,8 +88,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <img class="navbar-brand" src="img/LogoCvRates.png" alt="Logo" style="width:50px;height:50px;">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">CvRates</a>
+        <!-- <img class="navbar-brand" src="img/cvrates.png" alt="Logo" style="width:50px;height:50px;"> -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">CVrates</a>
        
         <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -66,7 +104,8 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li> -->
             <li class="nav-item">
-              <a class="portfolio-link" href="#signin" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">SignIn</a>
+                <!-- <img class="navbar-brand portfolio-link" data-toggle="modal" href="#signin" src="img/user-icon-white.png" alt="Logo" style="width:50px;height:50px;" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'"> -->
+              <a class="portfolio-link" href="#signin" data-toggle="modal" onclick="document.getElementById('id01').style.display='block'" style="width:auto; color:white">SignIn</a>
             </li>
           </ul>
         </div>
@@ -74,37 +113,44 @@
     </nav>
 
     <!-- Header   style="background-image:url(img/homepagepic.jpg)"; -->
-    <header class="masthead">
-      <div class="container">
-        <img class="img-fluid" src="img/LogoCvRates.png" alt="Logo">
+    
+
+    
+    <header class="masthead"> 
+        <div class="container">
+
+         <img class="img-fluid" src="img/cvrates.png" alt="Logo">
         <div class="intro-text">
-          <span class="name" style="color: rgb(3, 4, 26)">Cuanto te falta para obtener tu trabajo ideal? </span>
-          <!-- <hr class="star-light"> -->
-          <!-- <span class="skills"> </span> -->
-          <a class="btn btn-lg btn-outline" href="#comofunciona" data-toggle="modal">Como funciona?</a>
+          <span class="name" style="color:#2E3192;">Cuanto te falta para obtener tu trabajo ideal? </span>
+          <a class="btn btn-lg btn-outline" href="#comofunciona" data-toggle="modal" style="background-color:white; color:#2E3192;">Como funciona?</a>
         </div>
       </div>
     </header>
+   
+
+    <!-- <div id="containertest">
+        <div id="blocktest"></div>
+        <div id="texttest">Test</div>
+      </div> -->
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" style="background-image: url('img/buenosaires.jpg'); background-position: center center;
-    background-size: 1500px;" >
+    <section id="portfolio" >
       <div class="container">
-        <h2 class="text-center" style="color:white">Encontrarás trabajo fácilmente?</h2>
+        <h2 class="text-center" style="color:#2E3192">Encontrarás trabajo fácilmente?</h2>
         <br></br>
-        <h2 class="text-center" style="color:white">Estas creciendo lo suficiente para no quedar atrás?</h2>
+        <h2 class="text-center" style="color:#2E3192">Estas creciendo lo suficiente para no quedar atrás?</h2>
         <br></br>
-        <h2 class="text-center" style="color:white">Tenes la mejor posición posible en base a tu perfil?</h2>
+        <h2 class="text-center" style="color:#2E3192">Tenes la mejor posición posible en base a tu perfil?</h2>
         <br></br>
-          <a class="btn btn-lg btn-outline" style="color:white;margin-left:37%;" href="#porqueinscribirme" data-toggle="modal">Porqué inscribirme a CvRates?</a>
+          <a class="btn btn-lg btn-outline" style="background-color:white; color:#2E3192;margin-left:37%;" href="#porqueinscribirme" data-toggle="modal">Porqué inscribirme a CvRates?</a>
       </div> 
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about" style="background-image: url('img/newyork.jpg'); background-position: center center;
-    background-size: 1500px;">
+    <section class="success" id="about" style="background-image: url('img/cba_noche_V2_opacity.png'); background-position: center center;
+    background-size: 1650px;">
       <div class="container">
-        <h2 class="text-center">“Take control of your career!”</h2>
+        <h2 class="text-center">Take control of your career!</h2>
         <br> </br>
         <!-- <hr class="star-light"> -->
         <!-- <div class="row">
@@ -144,7 +190,7 @@
             </div>
           </div>
           <div class="col-lg-8 mx-auto text-center">
-            <a href="#" class="btn btn-lg btn-outline">
+            <a href="#" class="btn btn-lg btn-outline" style="background-color:white; color:#2E3192;"> 
               Inscribirse
             </a>
           </div>
@@ -202,16 +248,16 @@
     </section> -->
 
     <!-- Footer -->
-    <footer class="text-center">
-      <div class="footer-above">
+    <footer class="text-center" style="background-color:#2E3192;">
+      <div class="footer-above" >
         <div class="container">
           <div class="row">
             <div class="footer-col col-md-4">
-                <a class="portfolio-link" href="#MisionyVision" data-toggle="modal" > <h3>Misión y Visión</h3> </a>
-                <a class="portfolio-link" href="#ComoFuncionaElAlgoritmo" data-toggle="modal" > <h3>Cómo se armó el Algoritmo?</h3> </a>
+                <a class="portfolio-link" href="#MisionyVision" data-toggle="modal" style="color:white" > <h6>Misión y Visión</h6> </a>
+                <a class="portfolio-link" href="#ComoFuncionaElAlgoritmo" data-toggle="modal" style="color:white" > <h6>Cómo se armó el Algoritmo?</h6> </a>
             </div>
-            <div class="footer-col col-md-4">
-              <h3>Around the web</h3>
+            <div class="footer-col col-md-4" >
+              <h5>Síguenos</h5>
               <ul class="list-inline">
                 <li class="list-inline-item">
                   <a class="btn-social btn-outline" href="#">
@@ -241,18 +287,9 @@
               </ul>
             </div>
             <div class="footer-col col-md-4">
-                <h3>Location</h3>
+                <h6>Location</h6>
                 <p>Rodriguez de Busto 4039
                   <br>Cordoba, Argentina - 5000</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-below">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              Copyright cvrates 2017
             </div>
           </div>
         </div>
@@ -539,7 +576,7 @@
               <div class="container">
                 <h2>Signup Form</h2>
                 
-                <form action="/action_page.php" style="border:1px solid #ccc">
+                <form action="/action_page.php" method="post" style="border:1px solid #ccc">
                     <label><b>Email</b></label>
                     <input type="text" placeholder="Enter Email" name="email" required>
                 
